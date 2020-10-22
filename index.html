@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹사이트</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init(); //와우 플러그인 적용시 우선적으로 선언해줘야 할 문구. 스크립트 파트여서 주석은 이렇게.
+    </script>
+</head>
+<body>
+<!--
+    <h2 class="wow fadeInLeft">안녕하세요.</h2>
+    <h2 class="wow fadeInRight">안녕하세요.</h2>
+    <h2 class="wow fadeInDown">안녕하세요.</h2>
+    <h2 class="wow fadeInUp">안녕하세요.</h2>
+    <h2 class="wow bounce">안녕하세요.</h2>
+
+    <h2 class="title">
+        <span class="wow fadeIn title" data-wow-delay="0.25s">M</span>
+        <span class="wow fadeIn title" data-wow-delay="0.5s">I</span>
+        <span class="wow fadeIn title" data-wow-delay="0.75s">N</span>
+        <span class="wow fadeIn title" data-wow-delay="1s">G</span>
+        <span class="wow fadeIn title" data-wow-delay="1.25s">D</span>
+        <span class="wow fadeIn title" data-wow-delay="1.5s">O</span>
+        <span class="wow fadeIn title" data-wow-delay="1.75s">O</span>
+
+    </h2>
+-->
+<!--
+    <div class="outer_01">
+        <div class="inner_01"></div>
+    </div>
+    <hr>
+    <div class="outer_02">
+        <div class="inner_02"></div>
+    </div>
+-->
+
+    <header>
+        <div class="top">
+            <div class="wrap">
+                <div class="info">
+                    <ul>
+                        <li><a href="#"><i class="far fa-map"></i>Little Seoul</a></li>
+                        <li><a href="#"><i class="fas fa-phone-square-alt"></i> 8949-5989</a></li>
+                    </ul>
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="dark">
+                <div class="wrap">
+                    <div class="head">
+                        <div class="logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="" rel="story">Our Story</a></li>
+                                <li><a href="" rel="special">Special Dishes</a></li>
+                                <li><a href="" rel="dishes">Dishes</a></li>
+                                <li><a href="" rel="service">Service</a></li>
+                            </ul>
+                            <div class="reservation">
+                                <a href="#">Reservation</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main_title"><!--공간을 부여받은 display:table 영역이 선언되었다면-->
+                        <div class="t_center"><!--display:table-cell을 선언하고 tac, vam 해줘서 중간으로 이동-->
+                            <h1 class="title wow fadeInDown">Premium food at affordable price</h1>
+                            <p class="wow fadeInUp">You can get at lunch time in Seoul</p>
+                            <div class="main_btn">
+                                <a class="wow fadeInLeft" href="#">Learn More</a>
+                                <a class="wow fadeInRight" href="#">Get the App</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+    </header>
+    <section id="story">
+        <div class="wrap">
+            <div class="section_title">
+                <h2 class="title">Discover <span class="title">Our Story</span><!--Our Story에도 title 스타일 형식이 적용되야되는데 안된 특이케이스. Span에 class 달아줘서 해결--></h2><p>Hi, Welcome to Kuliner</p>
+            </div>
+            <div class="content">
+                <div class="box"></div>
+                <div class="box">
+                <p>In a country where understatement and simplicity reign, the unpretentious smorrebrod is a national dish. There are countless variations, from minimal to lavish, but all reflect straightforward Scandinavian sensibilities: simple, honest, local ingredients attractively presented with little waste</p>
+                <div class="arrow">
+                    <a href=""><img src="img/separator-img.png" alt="arrowDown"></a>
+                </div> 
+                </div>
+            </div>
+            <div class="plate_img wow fadeInUp">
+                <img src="img/description-1.png" alt="plate_deco">
+            </div>
+        </div><!--// .wrap -->
+    </section>
+    <section id="special">
+        <div class="sp_bg">
+            <div class="dark"></div>
+        </div>
+        <div class="wrap">
+            <div class="section_title">
+                <h2 class="title">Special Dishes</h2>
+                <p>Best Choices</p>
+            </div>
+            <!--div태그는 페이지를 이동할 수 있는 href의 속성을 가질 수 없음 따라서 onclick="location.href='url주소'"을 이용해 랜딩 페이지 형성 -->
+            <div class="content">
+                <div class="menu" onclick="location.href='detail.html#pasta'"><!--detail.html의 영역을 만들면 랜딩 주소 형성 완료. JS영역이라서 여긴 스킵-->
+                    <div class="dark">
+                        <h3 class="title">Pasta With Olive</h3>
+                        <p>Potato puree, aged cheddar & crunchy garnishes</p>
+                        <span class="price title">$47<small class="title">.00</small></span>
+                    </div>
+                </div>
+                <div class="menu" onclick="location.href='detail.html#shrimp'">
+                    <div class="dark">
+                        <h3 class="title">Shrimp Dish</h3>
+                        <p>summer squash, tomatoes & nasturtium vinaigrette</p>
+                        <span class="price title">$76<small class="title">.00</small></span>
+                    </div>
+                </div>
+                <div class="menu" onclick="location.href='detail.html#noodles'">
+                    <div class="dark">
+                        <h3 class="title">noodle in sweet source</h3>
+                        <p>cucumbers, olives, goat cheese & mint</p>
+                        <span class="price title">$35<small class="title">.00</small></span>
+                    </div>
+                </div>
+                <div class="menu" onclick="location.href='detail.html#steak'">
+                    <div class="dark">
+                        <h3 class="title">steak in love</h3>
+                        <p>smoked Butter & Lime</p>
+                        <span class="price title">$105<small class="title">.00</small></span>
+                    </div>
+                </div>
+                <div class="menu" onclick="location.href='detail.html#desert'">
+                    <div class="dark">
+                        <h3 class="title">desert with bee</h3>
+                        <p>burrata cheese, arugula, balsamic vinegar, and basil</p>
+                        <span class="price title">$23<small class="title">.00</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow">
+                <a href="#">
+                    <img src="img/separator-img.png" alt="arrow down">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="dishes">
+        <div class="wrap">
+            <div class="section_title">
+                <h2 class="title">dishes </h2>
+                <p>Our Menu</p>
+            </div>
+            <div class="content">
+                <div class="part">
+                    <h3>» SOUPES & APPETIZERS «</h3>
+                    <div class="menu_box">
+                        <div class="menu_space wow fadeInLeft">
+                            <div class="menu_detail">
+                                <h4>Fried breaded fillet of plaice</h4>
+                                <p>served with homemade remoulade and lemon</p>
+                                <span class="price title">$22<small class="title">.00</small>.</span>
+                            </div>
+                            <div class="menu_detail">
+                                <h4>Butter fried fillet of plaice</h4>
+                                <p>served with homemade remoulade, lemon and dill</p>
+                                <span class="price title">$23<small class="title">.00</small>.</span>
+                            </div>
+                            <div class="menu_detail">
+                                <h4>Fried fishcake</h4>
+                                <p>with homemade remoulade, lemon and dill</p>
+                                <span class="price title">$27<small class="title">.00</small>.</span>
+                            </div>
+                        </div>
+                        <div class="menu_space wow fadeInRight">
+                            <div class="menu_detail">
+                                <h4>Chicken salad</h4>
+                                <p>with homemade mayonnaise and fried bacon served on toasted white bread</p>
+                                <span class="price title">$24<small class="title">.00</small>.</span>
+                            </div>
+                            <div class="menu_detail">
+                                <h4>Smoked salmon</h4>
+                                <p>served with Danish smoked cheese cream and fresh herbs on toasted rye bread</p>
+                                <span class="price title">$33<small class="title">.00</small>.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="part">
+                    <h3>» MAIN DISHES «</h3>
+                    <div class="menu_box">
+                        <div class="menu_space wow fadeInLeft">
+                            <div class="menu_detail">
+                                <h4>Fried breaded fillet of plaice</h4>
+                                <p>served with homemade remoulade and lemon</p>
+                                <span class="price title">$22<small class="title">.00</small>.</span>
+                            </div>
+                            <div class="menu_detail">
+                                <h4>Butter fried fillet of plaice</h4>
+                                <p>served with homemade remoulade, lemon and dill</p>
+                                <span class="price title">$23<small class="title">.00</small>.</span>
+                            </div>
+                            <div class="menu_detail">
+                                <h4>Fried fishcake</h4>
+                                <p>with homemade remoulade, lemon and dill</p>
+                                <span class="price title">$27<small class="title">.00</small>.</span>
+                            </div>
+                        </div>
+                        <div class="menu_space wow fadeInRight">
+                            <div class="menu_detail">
+                                <h4>Chicken salad</h4>
+                                <p>with homemade mayonnaise and fried bacon served on toasted white bread</p>
+                                <span class="price title">$24<small class="title">.00</small>.</span>
+                            </div>
+                            <div class="menu_detail">
+                                <h4>Smoked salmon</h4>
+                                <p>served with Danish smoked cheese cream and fresh herbs on toasted rye bread</p>
+                                <span class="price title">$33<small class="title">.00</small>.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="part">
+                    <h3>» DESERTES & DRINKES «</h3>
+                    <div class="menu_box">
+                        <div class="menu_space wow fadeInLeft">
+                            <div class="menu_detail">
+                                <h4>Fried breaded fillet of plaice</h4>
+                                <p>served with homemade remoulade and lemon</p>
+                                <span class="price title">$22<small class="title">.00</small>.</span>
+                            </div>
+                            <div class="menu_detail">
+                                <h4>Butter fried fillet of plaice</h4>
+                                <p>served with homemade remoulade, lemon and dill</p>
+                                <span class="price title">$23<small class="title">.00</small>.</span>
+                            </div>
+                            <div class="menu_detail">
+                                <h4>Fried fishcake</h4>
+                                <p>with homemade remoulade, lemon and dill</p>
+                                <span class="price title">$27<small class="title">.00</small>.</span>
+                            </div>
+                        </div>
+                        <div class="menu_space wow fadeInRight">
+                            <div class="menu_detail">
+                                <h4>Chicken salad</h4>
+                                <p>with homemade mayonnaise and fried bacon served on toasted white bread</p>
+                                <span class="price title">$24<small class="title">.00</small>.</span>
+                            </div>
+                            <div class="menu_detail">
+                                <h4>Smoked salmon</h4>
+                                <p>served with Danish smoked cheese cream and fresh herbs on toasted rye bread</p>
+                                <span class="price title">$33<small class="title">.00</small>.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow">
+                <a href="#"><img src="img/separator-img.png" alt="arrow down"></a>
+            </div>
+        </div>
+    </section>
+    <section id="service">
+        <div class="wrap">
+            <div class="section_title">
+                <h2 class="title">we provide the following</h2>
+                <p>Service</p>
+            </div>
+            <div class="content">
+                <div class="service_box">
+                    <div class="center">
+                        <img src="img/sushi.png" alt="sushi">
+                        <h3>catering</h3>
+                        <p>Food is about celebration. It is comfort and memories, good times and sweet thoughts. Food is creativity and love.</p>
+                    </div>
+                </div>
+                <div class="service_box">
+                    <div class="center">
+                        <img src="img/pizza.png" alt="sushi">
+                        <h3>pizza holic</h3>
+                        <p>Bed of red and green oak lettuce, Kalamata olives, pepperoncinis, red onions, cherry tomatoes, cucumbers, feta cheese, oregano.</p>
+                    </div>
+                </div>
+                <div class="service_box">
+                    <div class="center">
+                        <img src="img/truck.png" alt="sushi">
+                        <h3>24hour delivery</h3>
+                        <p>Our standard delivery fee depends on your distance from the chosen restaurant(s). Minimum orders are required for most delivery orders.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow">
+                <a href="#"><img src="img/separator-img.png" alt="arrow down"></a>
+            </div>
+        </div>
+    </section>
+    <section id="offer"><!--이미지 공간 h:450-->
+        <div class="dark"><!--암막 공간 100% 100%-->
+            <div class="wrap"><!--position:relative-->
+                <div class="section_title">
+                    <h2 class="title">subscribe <span class="title">for</span> best offer</h2>
+                    <p>waiting for new dishes</p>
+                    <div class="send_box">
+                        <form action="" method="post">
+                            <input type="text" placeholder="subscribe@gmail.com" maxlength="30">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="register">
+        <div class="wrap">
+            <div id="map"></div>
+            <div class="register_form">
+                <h2 class="title">Register</h2>
+                <div class="form_line">
+                    <input type="text" placeholder="ID">
+                </div>
+                <div class="form_line">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="form_line">
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <div class="form_line">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="form_line">
+                    <div class="check">
+                        <input type="checkbox" value="chk" checked>
+                        <span>Send emails about our newest offers</span>
+                    </div>
+                    <button type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="sns">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+            </ul>
+        </div>
+        <p>copyrights &copy; kuliner</p>
+    </footer>
+
+
+
+
+    <button class="top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!--우하단의 화살표 클릭시 상단으로 이동하는 애니메이션-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("button.top").click(function(){
+                $("html, body").animate({scrollTop : 0}, 1000);
+            });
+
+            $("nav a").click(function(){
+                var $rel = $(this).attr("rel");  //사용자가 클릭한 곳의 rel="" 속성 값을 저장
+                $("html, body").animate({scrollTop : $("#"+$rel).offset().top}, 1000);
+                return false;
+            });
+        });
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMOwJdqgkxI6MQb4E95pSSBF1TABF5pZA&callback=initMap"></script>
+
+    <script>
+        function initMap() {
+            var uluru = {lat: 37.498741, lng: 127.026693}; //lat(latitude, 위도), lng(longitude, 경도)
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 18,
+            center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+
+</body>
+</html>
